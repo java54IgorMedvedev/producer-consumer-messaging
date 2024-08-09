@@ -26,7 +26,8 @@ public class ProducerSender extends Thread {
                              oddMessageBox.put(m); 
                          }
                      } catch (InterruptedException e) {
-                         Thread.currentThread().interrupt();
+                         
+                         return;
                      }
                  });
     }
